@@ -1,0 +1,57 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    --color_titulos: rgb(186, 81, 150);
+    --color_parrafos: rgb(63, 120, 194);
+}
+    
+.Logo_Disney {
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: lighter;
+    color: var(--color_titulos);
+    text-align: center;
+    letter-spacing: 0.5em;
+}
+
+h2 {
+    font-size: 24px;
+    color: var(--color_titulos);
+    text-align: left;
+    letter-spacing: 0.5em;
+}
+
+p {
+    font-size: 16px;
+    color: var(--color_parrafos);
+}
+
+.imagen_derecha {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    float: right;
+    margin-left: 20px;
+}
+
+.imagen_izquierda {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    float: left;
+    margin-right: 20px;
+}
+
+.imagen_final {
+    width: 100%;
+    height: auto;
+}

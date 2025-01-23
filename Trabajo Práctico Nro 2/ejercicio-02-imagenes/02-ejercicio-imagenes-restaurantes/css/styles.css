@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(40, 150, 136);
+}
+
+h1{
+    color: rgb(252, 234, 62) ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.restaurantes {
+    border: 13px solid white;
+    margin: 5px;
+}
