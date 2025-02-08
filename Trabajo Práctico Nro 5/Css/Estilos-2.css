@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color_fondo: rgba(162, 163, 64, 0.8);
+}
+
+body {
+    background-image: url(../Assets/Fondos/Controles.jpg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor_titulo {
+    position: relative;
+    display: block;
+    width: fit-content;
+    margin: 2em auto;
+    text-transform: uppercase;
+    background-color: var(--color_fondo);
+    border-style: double;
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.contenedor_titulo::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 2em;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, transparent, var(--color_fondo), transparent) no-repeat;
+    background-size: 300% 300%;
+    animation: borderMove 2s linear infinite;
+}
+
+@keyframes borderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.contenedor_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(151, 50, 50);
+    padding: 2em;
+    max-width: 60%;
+    margin: 2em auto;
+    border-radius: 2em;
+    position: relative;
+}
+
+.contenedor_principal h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.contenedor_principal h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 2em;
+    box-sizing: border-box;
+    background: transparent;
+    border-top: 5px solid white;
+    border-right: 8px solid white;
+    border-bottom: 5px solid white;
+    border-left: 8px solid white;
+    animation: borderLoop 2s linear infinite;
+}
+
+@keyframes borderLoop {
+    0% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50% {
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: white;
+    }
+
+    100% {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+}
+
+.contenedor_articulos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2em;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.contenedor_juegos {
+    background-color: var(--color_fondo);
+    border-style: double;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    color: black;
+    text-align: justify;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+    line-height: 1.5em;
+    box-shadow: 0 0 25px black;
+}
+
+.titulo_juegos {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-bottom: 1em;
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    background-color: rgb(185, 178, 178, 0.8);
+    padding: 1em;
+    box-shadow: 0 0 25px black;
+}
+
+.estilo_imagen {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 1em;
+    align-self: center;
+}
+
+button {
+    position: relative;
+    margin-left: auto;
+    display: block;
+    background-color: #C9DEF7;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    height: calc(100%);
+    border-radius: 2em;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, transparent, rgba(126, 20, 20, 0.5), transparent) no-repeat;
+    background-size: 300% 300%;
+    animation: borderMove 2s linear infinite;
+}
+
+button:hover {
+    background-color: #a9cde7;
+    transform: scale(1.20);
+    box-shadow: 0 0 15px black;
+}
+
+.contenedor_footer {
+    display: block;
+    font-weight: bold;
+    width: fit-content;
+    margin: 2em auto;
+    text-align: center;
+    background-color: var(--color_fondo);
+    padding: 1em;
+    border-radius: 2em;
+}

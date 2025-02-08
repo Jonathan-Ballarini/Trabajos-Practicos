@@ -1,0 +1,206 @@
+* {
+    box-sizing: content-box;
+}
+
+:root {
+    --color_fondo: rgb(188, 16, 92);
+}
+
+body {
+    background-color: rgb(225, 19, 100);
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+}
+
+.contenedor_titulo {
+    display: flex;
+    height: 50px;
+    width: auto;
+    margin: 20px 60px;
+    background-color: var(--color_fondo);
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+.contenedor_principal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_fondo);
+    margin: 20px 60px;
+    padding: 15px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.contenedor_articulos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.contenedor_juegos {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 251);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contenedor_juegos p {
+    color: black;
+    font-size: 16px;
+}
+
+.titulo_juegos {
+    color: rgb(156, 0, 54);
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-bottom: 2px dotted rgb(156, 0, 54);
+}
+
+.estilo_imagen {
+    display: block;
+    width: 100%;
+    align-self: center;
+    padding-top: 5px
+}
+
+a {
+    align-self: center;
+}
+
+button {
+    background-color: rgb(44, 143, 32);
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color_fondo);
+}
+
+.contenedor_footer {
+    display: flex;
+    height: 70px;
+    width: auto;
+    margin: 20px 60px;
+    background-color: rgb(233, 96, 147);
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contenedor_imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 15px;
+    background-color: rgb(250, 250, 251);
+    padding: 15px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.contenedor_imagenes img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    justify-self: center;
+    border-radius: 5px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.contenedor_imagenes img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px black
+}
+
+.contenedor_video {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    background-color: rgb(250, 250, 251);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.titulos_detalles {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedor_texto {
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #BC105C;
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+    background-color: rgb(250, 250, 251);
+    padding: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.explosion-button {
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #ec291b;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.explosion-button:hover {
+    transform: scale(1.1);
+    background-color: #d32f2f;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.explosion-button:active {
+    transform: scale(0.95);
+}
