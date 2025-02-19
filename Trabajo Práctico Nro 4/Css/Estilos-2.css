@@ -161,6 +161,7 @@ body {
     border-radius: 15px;
     margin-bottom: 1em;
     align-self: center;
+    box-shadow: 0 0 25px black;
 }
 
 button {
