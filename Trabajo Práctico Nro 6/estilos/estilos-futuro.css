@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap');
+
+:root {
+    --nyanza: #d8f3dc;
+    --celadon: #b7e4c7;
+    --celadon-2: #95d5b2;
+    --mint: #74c69d;
+    --mint-2: #52b788;
+    --sea-green: #40916c;
+    --dartmouth-green: #2d6a4f;
+    --brunswick-green: #1b4332;
+    --dark-green: rgb(8, 28, 21, 0.8);
+    --neon-glow: rgba(82, 183, 136, 0.8);
+    --color-fondo: #081c15;
+    --color-letras: #d8f3dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-letras);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url(/Trabajo\ Práctico\ Nro\ 6/assets/fondo_futuro.jpg) repeat center fixed;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: var(--mint);
+    text-shadow: 0px 0px 8px var(--neon-glow);
+    animation: brillar 1s infinite alternate;
+    margin: 20px 0 20px;
+    border-color: var(--sea-green);
+    box-shadow: 0px 0px 15px var(--mint);
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-green);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--mint-2);
+    max-width: 600px;
+    gap: 10px;
+}
+
+fieldset {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--mint-2), var(--sea-green));
+    border-image-slice: 1;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(27, 67, 50, 0.5);
+    box-shadow: 0px 0px 10px var(--mint);
+}
+
+legend {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--nyanza);
+    padding: 5px 10px;
+    background: var(--brunswick-green);
+    border-radius: 5px;
+    text-shadow: 0px 0px 5px var(--neon-glow);
+    margin-left: auto;
+}
+
+input, select, textarea {
+    background: rgba(74, 198, 157, 0.1);
+    border: 1px solid var(--mint-2);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--nyanza);
+    font-family: "Oxanium", sans-serif;
+}
+
+.opciones_select {
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-align-last: center;
+}
+
+.opciones_select:hover {
+    background-color: rgba(74, 198, 157, 0.4);
+}
+
+.opciones_select option {
+    background-color: rgb(68, 68, 68);
+    color: #fff;
+}
+
+.opciones_select option:checked {
+    background-color: rgb(102, 102, 102);
+    color: #ffcc00;
+}
+
+.actividades {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opciones_sedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contenedor_sedes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.input_seleccion {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.opciones_condiciones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin: 15px 0px 15px;
+}
+
+textarea {
+    resize: vertical;
+    overflow: auto;
+    width: 100%;
+    min-height: 75px;
+}
+
+::placeholder {
+    color: var(--mint-2);
+    padding-left: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--sea-green);
+    box-shadow: 0px 0px 15px var(--mint);
+    outline: none;
+    animation: brillar 1s infinite alternate;
+}
+
+@keyframes brillar {
+    0% {
+        box-shadow: 0px 0px 0px var(--mint);
+    }
+    100% {
+        box-shadow: 0px 0px 30px var(--mint);
+    }
+}
+
+button {
+    background: var(--sea-green);
+    color: var(--dark-green);
+    font-family: "Orbitron", sans-serif;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.aleatorio button{
+    width: 70px;
+    height: auto;
+}
+
+.boton_imagen {
+    width: 100%;
+    height: auto;
+}
+
+button:hover {
+    background: var(--mint-2);
+    box-shadow: 0px 0px 8px var(--mint);
+    transform: scale(1.05);
+}
+
+.boton_apretado button {
+    background: var(--mint-2);
+    box-shadow: 0px 0px 8px var(--mint);
+    transform: scale(1.05);
+}
+
+.contenedor_ejercicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedor_seleccion_estilos select {
+    width: 100%;
+}
+
+.contenido_encolumnado {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 0.6em;
+}
+
+.radio_estilos_opciones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.contenedor_botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+
+
+
+

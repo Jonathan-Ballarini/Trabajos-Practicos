@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+.yatra-one-regular {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --color-primario: #68270e;
+    --color-secundario: #d65519;
+    --color-terciario: #ECDCBF;
+    --color-cuaternario: #d8d4c7;
+    --color-quintenario: #000000;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+
+
+
+body {
+    background-image: url(https://st2.depositphotos.com/1518767/9376/i/450/depositphotos_93766458-stock-photo-composite-image-of-wooden-table.jpg); ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    color: var(--color-primario);
+    transform: scale(1.3);
+    transform-origin: top;;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    
+    
+
+
+}
+
+h1{
+    font-family: "Yatra One", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    margin: 20px 0px 20px;
+}
+
+
+fieldset {  
+    background-image: url(https://media.istockphoto.com/id/624697496/es/foto/tablas-de-madera-en-apuros.jpg?s=612x612&w=0&k=20&c=eWzPaFSzGzUJzOwERORJtYIcf_Gsl7UPFlAEtJYIuV8=);
+    color: var(--color-quintenario);
+    border: 4px solid var(--color-secundario);
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 50px;
+        
+
+}
+
+legend {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    text-transform: uppercase;
+    font-size: 1.0em;
+    font-weight: bold;
+    background-color: var(--color-primario);
+    padding: 0.8em;
+    margin-left: 1.0em;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-cuaternario);
+    border: solid 3px var(--color-secundario);
+}
+
+.letra_grande {
+    font-size: 1.9em;
+}
+
+
+.contenedor_categorias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+    margin: 20px 0px 20px;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    color: #000000;
+    background-color: #ffffff49;
+    ;
+
+
+
+
+}
+
+.contenido_encolumnado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75em;
+    margin: 20px 0px 20px;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    color: #000000;    
+}
+
+.contenido_encolumnado input{
+    width: 350px;
+}
+
+
+.actividades {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding-left: 50px;
+}
+
+.opciones_sedes {
+    border: solid 3px var(--color-secundario);
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 2em;
+    margin: 40px;
+}
+
+input {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    border: 1px solid var(--color-secundario);
+    border-radius: 2px;
+    text-align: right;
+    outline: none;
+    font-size: 10px;
+}
+
+.input_seleccion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--color-primario);
+}
+
+.opciones_condiciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--color-primario);
+}
+
+.input_seleccion input {
+    width: auto;
+}
+
+input[type="checkbox"] {
+    
+    transform: scale(1.0);
+}
+
+input[type="radio"] {
+    transform: scale(1.0);
+}
+
+select {
+    border: 2px solid var(--color-secundario);
+    border-radius: 2px;
+    width: 100%;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 10px;
+    outline: none;
+}
+
+textarea {
+    border: 2px solid var(--color-secundario);
+    resize: vertical;
+    overflow: auto;
+    border-radius: 2px;
+    width: 100%;
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 10px;
+    min-height: 75px;
+    outline: none;
+    text-align: center;
+}
+
+
+::placeholder {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 9px;
+    color: var(--color-secundario);
+    text-align: left;
+    margin-left: 5px;
+}
+
+form div p {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    color: var(--color-quintenario);
+}
+
+.contenedor_botones {
+    display: flex;
+    justify-content: left;
+    gap: 2em;
+}
+
+button {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 10px;
+    padding: 10px;
+    border: 1px solid var(--color-primario);
+    border-radius: 5px;
+    color: var(--color-secundario);
+    background-color: var(--color-terciario);
+    cursor: pointer;
+}
+
+.aleatorio button{
+    width: 70px;
+    height: auto;
+}
+
+.boton_imagen {
+    width: 100%;
+    height: auto;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.boton_apretado button {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+fieldset:focus-within {
+    background-color: var(--color-primario);
+}
+
+fieldset:focus-within legend {
+    background-color: var(--color-secundario);
+}
+
+fieldset input:focus {
+    background-color: var(--color-terciario);
+    color: var(--color-quintenario);
+    border: 1px solid var(--color-secundario);
+}
+
+fieldset input:focus::placeholder {
+    color: var(--color-quintenario);
+}
+
+fieldset select:focus {
+    border: 1px solid var(--color-primario);
+}
+
+fieldset textarea:focus {
+    background-color: var(--color-terciario);
+    border: 3px solid var(--color-primario);
+    color: var(--color-quintenario);
+}
+
+.contenedor_ejercicios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.contenedor_seleccion_estilos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    align-items: center;
+    gap: 1em;
+}
+
+.contenedor_radio_estilos {
+    font-family: "Yatra One", system-ui;
+    font-weight: 400;
+    font-style: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    align-items: center;
+    gap: 1em;
+}
+
+.radio_estilos_opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.radio_estilos_opciones input {
+    width: auto;
+}

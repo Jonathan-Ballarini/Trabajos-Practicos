@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="link_estilos" rel="stylesheet" href="estilos/estilos-base.css" />
+    <title>Afiliación - Ballarini, Jonathan / Suarez, Federico</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="contenedor_ejercicios">
+                <div class="cambio_estilos">
+                    <button>Cambiar Estilo</button>
+                </div>
+                <div class="aleatorio">
+                    <button><img class="boton_imagen" src="/Trabajo Práctico Nro 6/assets/random.png" alt=""></button>
+                </div>
+                <div class="recordar">
+                    <button>Recordar Estilo</button>
+                </div>
+                <fieldset class="contenedor_seleccion_estilos">
+                    <legend for="seleccionar_estilos">Seleccionar Estilos</legend>
+                    <select class="opciones_select" name="seleccionar_estilos" id="estilos_selector" required>
+                        <option value="" disabled selected>- Seleccionar -</option>
+                        <option value="sin_estilos">Sin estilos</option>
+                        <option value="estilo_base">Estilo Base</option>
+                        <option value="estilo_retro">Retro</option>
+                        <option value="estilo_futuro">Futuro</option>
+                    </select>
+                </fieldset>
+                <fieldset class="contenedor_radio_estilos">
+                    <legend for="label_radio">Seleccionar Estilos</legend>
+                    <div class="radio_estilos_opciones">
+                        <input type="radio" name="radio_estilos" id="radio_sin_estilos" value="sin_estilo" />
+                        <label for="radio_sin_estilos"> Sin Estilo </label>
+                        <input type="radio" name="radio_estilos" id="radio_estilo_base" value="estilo_base" />
+                        <label for="radio_estilo_base"> Estilo Base </label>
+                        <input type="radio" name="radio_estilos" id="radio_estilo_retro" value="estilo_retro" />
+                        <label for="radio_estilo_retro"> Retro </label>
+                        <input type="radio" name="radio_estilos" id="radio_estilo_futuro" value="estilo_futuro" />
+                        <label for="radio_estilo_futuro"> Futuro </label>
+                    </div>
+                </fieldset>
+            </div>
+        </nav>
+        <div class="titulo">
+            <h1>Vení al Gym! 💪🏼</h1>
+        </div>
+    </header>
+    <main>
+        <form action="index.html" method="POST">
+            <fieldset class="datos_personales">
+                <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+                <div class="contenedor_categorias">
+                    <div class="contenido_encolumnado">
+                        <label for="nombre">Nombre: *</label>
+                        <input type="text" name="nombre" id="nombre" pattern="^[A-Za-z\s]+$" required />
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label for="apellido">Apellido: *</label>
+                        <input type="text" name="apellido" id="apellido" pattern="^[A-Za-z\s]+$" required />
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label for="documento">Documento: *</label>
+                        <input type="text" name="documento" id="documento" required pattern="^[1-9][0-9]{0,7}$" />
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label for="nacionalidad">Nacionalidad: *</label>
+                        <select class="opciones_select" name="nacionalidad" id="nacionalidad" required>
+                            <option value="" disabled selected>- Seleccionar -</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasileña</option>
+                            <option value="uruguay">Uruguaya</option>
+                            <option value="otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label for="descripcion">Contanos un poco de vos...</label>
+                        <textarea id="descripcion" id="descripcion"></textarea>
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label> Sexo: *</label>
+                        <div class="input_seleccion">
+                            <input type="radio" name="sexo" id="sexo_femenino" value="femenino" checked required />
+                            <label for="sexo_femenino"> Femenino </label>
+                            <input type="radio" name="sexo" id="sexo_masculino" value="masculino" required />
+                            <label for="sexo_masculino"> Masculino </label>
+                            <input type="radio" name="sexo" id="sexo_otro" value="otro" required />
+                            <label for="sexo_otro"> Otro </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="separador">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <fieldset class="datos_contacto">
+                <legend>📱 Datos de Contacto ✉️</legend>
+                <div class="contenedor_categorias">
+                    <div class="contenido_encolumnado">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono" pattern="^\d{2,3}[0-9]{8,10}$"
+                            placeholder="Código de área y número" />
+                        <!-- el pattern es para que pueda agregar entre 2 y 3 digitos de codigo de area y despues entre 8 y 10 numeros de telefono, por si es un fijo o celular-->
+                    </div>
+                    <div class="contenido_encolumnado">
+                        <label for="mail">Dirección de correo electrónico: *</label>
+                        <input type="email" name="mail" id="mail"
+                            pattern="^[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\.[a-zA-Z]{2,}$"
+                            placeholder="Ej: mail@gmail.com" required />
+                    </div>
+                </div>
+            </fieldset>
+            <div class="separador">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <fieldset class="actividades">
+                <legend>🚴Actividades🤸‍♂️</legend>
+                <p>Por favor, indicá cuáles actividades te interesan.</p>
+                <div class="contenedor_sedes">
+                    <div class="opciones_sedes">
+                        <label> Sede Palermo:</label>
+                        <div class="input_seleccion">
+                            <input type="checkbox" name="deporte" id="palermo_basquet" value="basquet" />
+                            <label for="palermo_basquet">Básquet</label>
+                            <input type="checkbox" name="deporte" id="palermo_boxeo" value="boxeo" />
+                            <label for="palermo_boxeo">Boxeo</label>
+                            <input type="checkbox" name="deporte" id="palermo_futbol" value="futbol" />
+                            <label for="palermo_futbol">Fútbol</label>
+                            <input type="checkbox" name="deporte" id="palermo_tenis" value="Tenis" />
+                            <label for="palermo_tenis">Tenis</label>
+                        </div>
+                    </div>
+                    <div class="opciones_sedes">
+                        <label> Sede Rosario:</label>
+                        <div class="input_seleccion">
+                            <input type="checkbox" name="deporte" id="rosario_basquet" value="basquet" />
+                            <label for="rosario_basquet">Básquet</label>
+                            <input type="checkbox" name="deporte" id="rosario_futbol" value="futbol" />
+                            <label for="rosario_futbol">Fútbol</label>
+                            <input type="checkbox" name="deporte" id="rosario_rugby" value="rugby" />
+                            <label for="rosario_rugby">Rugby</label>
+                            <input type="checkbox" name="deporte" id="rosario_voley" value="voley" />
+                            <label for="rosario_voley">Voley</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="contenedor_condiciones">
+                <div class="opciones_condiciones">
+                    <input type="checkbox" id="condiciones" required />
+                    <label for="condiciones">Acepto las condiciones*</label>
+                </div>
+                <div class="opciones_condiciones">
+                    <input type="checkbox" id="novedades" checked />
+                    <label for="novedades">Deseo recibir novedades</label>
+                </div>
+                <p>*: campo obligatorio.</p>
+            </div>
+            <div>
+                <div class="contenedor_botones">
+                    <button type="submit">Iniciar afiliación</button>
+                    <button type="reset">Restablecer</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="funciones/funciones_index.js"></script>
+</html>
