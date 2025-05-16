@@ -1,0 +1,21 @@
+<h1>Lista de usuarios registrados</h1>
+
+{{#if usuarios.length}}
+  <ul class="lista-usuarios">
+    {{#each usuarios}}
+      <li class="item-usuario">
+        <span>{{this.nombre}} - {{this.edad}} años</span>
+        <br>
+        <button class="btn-borrar" data-id="{{this._id}}">Borrar</button>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>No hay usuarios registrados aún.</p>
+{{/if}}
+
+<div class="info-links">
+  <a href="/" class="link-volver">Volver al inicio</a>
+</div>
+
+<script src="/js/usuarios.js"></script>

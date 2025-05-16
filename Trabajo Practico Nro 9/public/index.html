@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="contenedorFormulario">
+        <h2>Datos del Contacto</h2>
+        <form id="formularioContactos">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="date" id="fechaNacimiento" required>
+            <button type="submit">Agregar / Actualizar Contacto</button>
+        </form>
+    </div>
+
+    <div class="contenedorContactos">
+        <h2>Lista de Contactos</h2>
+        <ul id="listaContactos"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
